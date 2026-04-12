@@ -33,8 +33,8 @@ Criar a página `login.html` contendo um formulário de autenticação para usu�
 
 ## Critérios de conclusão
 
-- [ ] Estrutura HTML semântica
-- [ ] Inputs com labels acessíveis
+- [ x] Estrutura HTML semântica
+- [ x] Inputs com labels acessíveis
 - [ ] Formulário centralizado na página
 - [ ] Layout consistente com o design do projeto
 ```
@@ -71,7 +71,7 @@ Criar a página `register.html` com formulário completo para criação de conta
 
 - [ ] Validação de campos obrigatórios
 - [ ] Confirmação de senha compatível
-- [ ] Checkbox de termos deve ser obrigatório
+- [ x] Checkbox de termos deve ser obrigatório
 - [ ] Layout consistente com login.html
 ```
 
@@ -138,7 +138,7 @@ Criar a página `about.html` apresentando a empresa, sua história e equipe.
 
 ## Critérios de conclusão
 
-- [ ] Uso de tags semânticas (section, article, aside)
+- [x ] Uso de tags semânticas (section, article, aside)
 - [ ] Imagens com alt text descritivo
 - [ ] Timeline acessível e responsiva
 - [ ] Links de redes sociais abrem em nova aba
