@@ -69,7 +69,7 @@ Criar a página `register.html` com formulário completo para criação de conta
 
 ## Critérios de conclusão
 
-- [ ] Validação de campos obrigatórios
+- [ x] Validação de campos obrigatórios
 - [ ] Confirmação de senha compatível
 - [ x] Checkbox de termos deve ser obrigatório
 - [ ] Layout consistente com login.html
@@ -173,8 +173,8 @@ Criar a página `contact.html` com formulário de contato e informações instit
 
 ## Critérios de conclusão
 
-- [ ] Todos os campos obrigatórios marcados com required
-- [ ] Iframe do mapa com título acessível
+- [x ] Todos os campos obrigatórios marcados com required
+- [x ] Iframe do mapa com título acessível
 - [ ] Dados de contato visíveis sem JavaScript
 - [ ] Layout de duas colunas em desktop
 ```
