@@ -75,3 +75,16 @@
 	color: var(--gray-700);
 	cursor: pointer;
 }
+
+#formulario-de-contato {
+	display: flex;
+	gap: 40px;
+}
+
+#contact-form {
+	flex:1;
+}
+
+#adress {
+	flex: 1;
+}
