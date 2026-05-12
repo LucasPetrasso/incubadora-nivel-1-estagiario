@@ -6,9 +6,9 @@
 	padding: 5rem 0;
 	background: linear-gradient(
 		135deg,
-		var(--gray-50) 0%,
+		var(--gray-400) 0%,
 		white 50%,
-		var(--gray-100) 100%
+		var(--gray-500) 100%
 	);
 }
 
@@ -29,13 +29,13 @@
 	display: inline-flex;
 	align-items: center;
 	padding: 0.5rem 1rem;
-	background: rgba(255, 107, 53, 0.1);
+	background: rgba(250, 151, 116, 0.1);
 	color: var(--primary);
-	font-size: 0.875rem;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: 700;
 	border-radius: 999px;
 	width: fit-content;
-	border: 1px solid rgba(255, 107, 53, 0.2);
+	border: 1px solid var(--primary);
 }
 
 .hero__title {
