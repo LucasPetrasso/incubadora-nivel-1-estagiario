@@ -31,6 +31,13 @@
 	gap: 2rem;
 }
 
+.benefits__grid {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin: 40px 0 30px 0;
+}
+
 /* Page Header */
 .page-header {
 	padding: 4rem 0 3rem;
