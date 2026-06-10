@@ -27,50 +27,475 @@
 			content="Encontre as melhores ofertas em eletrônicos, periféricos e muito mais" />
 
 		<title>E-commerce - Sobre Nós | As Melhores Ofertas em Tecnologia</title>
+
+        <link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet" />
+
+		<!-- Stylesheet -->
+		<link
+			rel="stylesheet"
+			href="../css/main.css" />
     </head>
     <body>
-        <h1>Sobre Nós</h1>
-        <section>
-            <div class="about-us">
-                <p>
-                    Somos uma empresa apaixonada por oferecer as melhores soluções em e-commerce, conectando qualidade, praticidade e inovação 
+        <!-- Header / Navigation -->
+		<header class="header">
+			<div class="header__container">
+				<!-- Logo -->
+				<a
+					href="index.html"
+					class="header__logo">
+					<svg
+						class="header__logo-icon"
+						viewBox="0 0 40 40"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<rect
+							width="40"
+							height="40"
+							rx="8"
+							fill="currentColor" />
+						<path
+							d="M12 20L18 26L28 14"
+							stroke="white"
+							stroke-width="3"
+							stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+					<span>TechShop</span>
+				</a>
+
+				<!-- Menu Toggle (Mobile) -->
+				<button
+					class="header__menu-toggle"
+					aria-label="Menu">
+					<span class="header__menu-toggle-bar"></span>
+					<span class="header__menu-toggle-bar"></span>
+					<span class="header__menu-toggle-bar"></span>
+				</button>
+
+				<!-- Navigation -->
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__menu-item">
+							<a
+								href="index.html"
+								class="header__menu-link active"
+								>Home</a
+							>
+						</li>
+						<li class="header__menu-item">
+							<a
+								href="products.html"
+								class="header__menu-link"
+								>Produtos</a
+							>
+						</li>
+						<li class="header__menu-item">
+							<a
+								href="#ofertas"
+								class="header__menu-link"
+								>Ofertas</a
+							>
+						</li>
+						<li class="header__menu-item">
+							<a
+								href="contact.html"
+								class="header__menu-link"
+								>Contato</a
+							>
+						</li>
+					</ul>
+
+					<!-- Actions -->
+					<div class="header__actions">
+						<a href="login.html" class="header__icon-btn" aria-label="Login">
+						<button
+							class="header__icon-btn"
+							data-login-btn
+							aria-label="Login">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round">
+								<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+								<circle
+									cx="12"
+									cy="7"
+									r="4"></circle>
+							</svg>
+						</button>
+						</a>
+						<button
+							class="header__icon-btn"
+							data-cart-btn
+							aria-label="Carrinho">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round">
+								<circle
+									cx="9"
+									cy="21"
+									r="1"></circle>
+								<circle
+									cx="20"
+									cy="21"
+									r="1"></circle>
+								<path
+									d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+							</svg>
+							<span class="header__cart-badge">0</span>
+						</button>
+					</div>
+				</nav>
+                	<!-- Overlay for mobile menu -->
+				<div class="header__overlay"></div>
+			</div>
+		</header>
+        <section class="about">
+    
+            <!-- 1. Apresentação -->
+            <div class="about-intro">
+
+                <div class="about-text">
+                    <h2>Mais do que uma loja, uma experiência de compra.</h2>
+
+                    <p>
+                        Somos uma empresa apaixonada por oferecer as melhores soluções em e-commerce, conectando qualidade, praticidade e inovação 
                     em cada produto que disponibilizamos. Desde a nossa fundação, trabalhamos com o propósito de transformar a experiência de compra 
                     online em algo simples, seguro e satisfatório.<br>Nosso compromisso vai além da venda: buscamos construir relacionamentos 
                     duradouros com nossos clientes, oferecendo um atendimento próximo, transparente e eficiente. 
                     Acreditamos que cada compra é uma oportunidade de gerar valor e confiança, e é isso que nos motiva todos os dias.
-                </p>
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="/assets/equipe.png" alt="">
+                </div>
+
             </div>
-        </section>    
-        <h2> Missão, Visão e Valores</h2>
-        <section>
-            <div class="mission">
-                <h3>Missão</h3>
-                <p>
-                    Oferecer produtos de qualidade com uma experiência de compra prática, 
-                    segura e acessível, garantindo a satisfação dos nossos clientes em cada etapa.
-                </p>
-                <h3>Visão</h3>
-                <p>
-                    Ser referência no mercado de e-commerce, reconhecida pela excelência no 
-                    atendimento, inovação constante e confiança construída com nossos clientes.
-                </p>
-                <h3>Valores</h3>
-                <ul>
-                    <li>Compromisso com o cliente</li>
-                    <li>Trasnparência e ética em todas as relações</li>
-                    <li>Qualidade e excelência nos produtos e serviços</li>
-                    <li>Inovação contínua</li>
-                    <li>Responsabilidade e respeito</li>
-                </ul>
-            </div>  
+
+
+            <!-- 2. Números -->
+            <div class="about-stats">
+
+                <div class="stat-card">
+                    <h3>10.000+</h3>
+                    <p>Pedidos Entregues</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>4.9/5</h3>
+                    <p>Avaliação Média</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Todo Brasil</h3>
+                    <p>Área de Atendimento</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>5 Anos</h3>
+                    <p>De Mercado</p>
+                </div>
+
+            </div>
+
+
+            <!-- 3. Timeline -->
+            <div class="history">
+
+                <h2>Nossa História</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-card left">
+                        <span>2020</span>
+                        <h3>Início da Jornada</h3>
+                        <p>Criamos nossa empresa com o objetivo de oferecer uma experiência de compra online simples e confiável.</p>
+                    </div>
+
+                    <div class="timeline-card right">
+                        <span>2021</span>
+                        <h3>Primeiras Vendas</h3>
+                        <p>Realizamos nossos primeiros pedidos e conquistamos a confiança dos nossos clientes.</p>
+                    </div>
+
+                    <div class="timeline-card left">
+                        <span>2022</span>
+                        <h3>Crescimento</h3>
+                        <p>Expandimos nosso catálogo e aumentamos nossa presença no mercado digital.</p>
+                    </div>
+
+                    <div class="timeline-card right">
+                        <span>2023</span>
+                        <h3>Expansão</h3>
+                        <p>Firmamos parcerias estratégicas para oferecer mais variedade e qualidade.</p>
+                    </div>
+
+                    <div class="timeline-card left">
+                        <span>2024</span>
+                        <h3>Expansão Nacional</h3>
+                        <p>Passamos a atender clientes de todo o Brasil com mais eficiência e rapidez.</p>
+                    </div>
+
+                    
+                    <div class="timeline-card right">
+                        <span>2025</span>
+                        <h3>Consolidação da Marca</h3>
+                        <p>Nos tornamos uma referência em atendimento, qualidade e satisfação do cliente.</p>
+                    </div>
+
+                    <div class="timeline-card left">
+                        <span>2026</span>
+                        <h3>Hoje</h3>
+                        <p>Continuamos inovando e trabalhando para oferecer a melhor experiência de compra possível.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 4. Missão, Visão e Valores -->
+            <div class="mvv">
+
+                <div class="mvv-card">
+                    <span>🎯</span>
+                    <h3>Missão</h3>
+                    <p>Texto da missão.</p>
+                </div>
+
+                <div class="mvv-card">
+                    <span>🔭</span>
+                    <h3>Visão</h3>
+                    <p>Texto da visão.</p>
+                </div>
+
+                <div class="mvv-card">
+                    <span>💎</span>
+                    <h3>Valores</h3>
+
+                    <ul>
+                        <li>Transparência</li>
+                        <li>Qualidade</li>
+                        <li>Inovação</li>
+                        <li>Compromisso</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </section>
-        <h3>Siga-Nos Nas Redes Sociais</h3>
-        <section>
             <div class="socials">
                 <a href="link_para_instagram" target="_blank">Instagram</a>
                 <a href="link_para_X" target="_blank">X</a>
                 <a href="link_para_facebook" target="blank">Facebook</a>
             </div>
-        </section>  
+        </section>
+        <footer class="footer">
+			<div class="footer__container">
+				<div class="footer__grid">
+					<!-- About -->
+					<div class="footer__column">
+						<div class="footer__logo">TechShop</div>
+						<p class="footer__about">
+							Sua loja online de tecnologia com os melhores produtos e as
+							melhores ofertas.
+						</p>
+						<div class="footer__social">
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Facebook">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="currentColor">
+									<path
+										d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+								</svg>
+							</a>
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Instagram">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round">
+									<rect
+										x="2"
+										y="2"
+										width="20"
+										height="20"
+										rx="5"
+										ry="5"></rect>
+									<path
+										d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+									<line
+										x1="17.5"
+										y1="6.5"
+										x2="17.51"
+										y2="6.5"></line>
+								</svg>
+							</a>
+							<a
+								href="#"
+								class="footer__social-link"
+								aria-label="Twitter">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									viewBox="0 0 24 24"
+									fill="currentColor">
+									<path
+										d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+
+					<!-- Links -->
+					<div class="footer__column">
+						<h4 class="footer__column-title">Links Rápidos</h4>
+						<ul class="footer__links">
+							<li>
+								<a
+									href="index.html"
+									class="footer__link"
+									>Home</a
+								>
+							</li>
+							<li>
+								<a
+									href="products.html"
+									class="footer__link"
+									>Produtos</a
+								>
+							</li>
+							<li>
+								<a
+									href="#ofertas"
+									class="footer__link"
+									>Ofertas</a
+								>
+							</li>
+							<li>
+								<a
+									href="about.html"
+									class="footer__link"
+									>Sobre Nós</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Help -->
+					<div class="footer__column">
+						<h4 class="footer__column-title">Ajuda</h4>
+						<ul class="footer__links">
+							<li>
+								<a
+									href="#"
+									class="footer__link"
+									>FAQ</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="footer__link"
+									>Envio e Entrega</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="footer__link"
+									>Política de Devolução</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="footer__link"
+									>Rastreamento</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Newsletter -->
+					<div class="footer__column">
+						<h4 class="footer__column-title">Newsletter</h4>
+						<p class="footer__about">Receba ofertas exclusivas no seu e-mail</p>
+						<form
+							class="footer__newsletter-form"
+							data-validate
+							id="newsletterForm">
+							<input
+								type="email"
+								name="email"
+								class="footer__newsletter-input"
+								placeholder="Seu e-mail"
+								required />
+							<button
+								type="submit"
+								class="footer__newsletter-btn">
+								Inscrever
+							</button>
+						</form>
+					</div>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer__bottom">
+					<p class="footer__copyright">
+						&copy; 2026 TechShop. Todos os direitos reservados.
+					</p>
+					<div class="footer__payment-methods">
+						<span
+							style="color: var(--color-gray-400); font-size: var(--text-sm)"
+							>Aceitamos:</span
+						>
+						 <!-- Visa -->
+    					<img src="/assets/icons/visa.svg" alt="Visa" class="payment-icon" id="visa-icon">
+						<!-- Mastercard -->
+    					<img src="/assets/icons/mastercard.svg" alt="Mastercard" class="payment-icon" id="mastercard-icon">
+						<!-- Pix (exemplo genérico) -->
+    					<img src="/assets/icons/pix.svg" alt="Pix" class="payment-icon" id="pix-icon">
+					</div>
+				</div>
+			</div>
+		</footer>  
     </body> 
 </html>        

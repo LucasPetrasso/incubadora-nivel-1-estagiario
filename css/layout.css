@@ -168,3 +168,85 @@
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 1.5rem;
 }
+
+/* About us Page */
+.about {
+	margin-top: 125px;
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+	background: linear-gradient(
+    135deg,
+    #0066b3 0%,
+    #004e89 50%,
+    #003b66 100%
+	);
+	color: white
+}
+
+.about-image {
+	border-radius: 20px;
+	overflow: hidden;
+	margin-top: 0px;
+}
+
+.about-text {
+	padding: 50px;
+	justify-content: center;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+	margin: 20px 30px 70px 30px;
+}
+
+.stat-card {
+	background: var(--primary);
+	padding: 2rem;
+	border-radius: 16px;
+	color: white;
+}
+
+.stat-card:hover {
+	transform: translateY(-8px);
+}
+
+.timeline {
+    position: relative;
+	margin: 20px 30px 70px 30px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+	height: 100%;
+    background: black;
+    left: 50%;
+}
+
+.left {
+    margin-right: 55%;
+}
+
+.right {
+    margin-left: 55%;
+}
+
+.history h2 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.mvv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 30px 70px 30px;
+	gap: 2rem;
+}
