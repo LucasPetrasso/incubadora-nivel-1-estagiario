@@ -199,6 +199,10 @@
 	justify-content: center;
 }
 
+.about-text p {
+	font-size: 1.3rem;
+}
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -210,6 +214,7 @@
 	background: var(--primary);
 	padding: 2rem;
 	border-radius: 16px;
+	font-size: 1.5rem;
 	color: white;
 }
 
@@ -219,7 +224,8 @@
 
 .timeline {
     position: relative;
-	margin: 20px 30px 70px 30px;
+	margin: 20px 30px 90px 30px;
+	border-bottom: 2px solid black
 }
 
 .timeline::before {
@@ -229,6 +235,23 @@
 	height: 100%;
     background: black;
     left: 50%;
+}
+
+.timeline-card {
+	padding: 20px;
+	border-radius: 20px;
+	background: linear-gradient(
+    135deg,
+    #0066b3 0%,
+    #004e89 50%,
+    #003b66 100%
+	);
+	font-size: 1.2rem;
+	color: white;	
+}
+
+.timeline-card span {
+	font-size: 2rem;
 }
 
 .left {
@@ -246,7 +269,15 @@
 
 .mvv {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 50px 30px 70px 30px;
-	gap: 2rem;
+	gap: 300px;
+}
+
+.mvv-card {
+	padding: 20px;
+	border-radius: 20px;
+	font-size: 1.2rem;
+	background-color: var(--primary);
+	color: white;
 }
